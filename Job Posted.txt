@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html class="html" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="ZY4N96UTD4q1QBMdtaAJMK27mNt1wbuuykofGgzg">
+    <title>A to Z</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+
+    <link href="https://portal.atozinterpreting.com/css/app.css" rel="stylesheet">
+	<link href="/favicon.ico" rel="shortcut icon" />
+    <style>
+        .sidebar {
+            /* width: 11%; Full viewport width */
+            overflow-x: auto;
+            /* Enable horizontal scrolling */
+            white-space: nowrap;
+            /* Prevent items from wrapping to the next line */
+        }
+
+        .sidebar__items {
+            /* display: flex; Use flexbox for horizontal layout */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar__item {
+            margin-right: 1rem;
+            flex-shrink: 0;
+            /* Prevent items from shrinking */
+        }
+
+        .sidebar__link {
+            /* display: flex; */
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            padding: 0.5rem;
+        }
+
+        .sidebar__image {
+            margin-right: 0.5rem;
+        }
+
+        .sidebar__item--active .sidebar__link {
+            background-color: #f0f0f0;
+            border-radius: 4px;
+        }
+    </style>
+    <style>
+        #signature-pad {
+            border: 1px solid #000;
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body class="body">
+
+    <aside class="messages">
+
+    
+    
+
+    
+    
+</aside>
+
+    <div id="app">
+        <header class="header">
+            <div class="header__logo">
+                <a href="/">
+                    <img class="img-fluid header__image" alt="A to Z" src="/img/logo.svg">
+                </a>
+            </div>
+            <div class="header__inner">
+
+                <form method="GET" action="https://portal.atozinterpreting.com" accept-charset="UTF-8" class="header__search">
+
+                <input placeholder="Search by ref" class="input header__input" name="search" type="text">
+
+                <button type="submit" class="btn btn--secondary header__btn">Submit</button>
+
+                </form>
+
+                <div class="header__right">
+                    <div class="header__logout" id="headerLogout">
+                        <h2 class="header__name">Mohammed Ahmed Abdihafit</h2>
+
+                        
+                        <a class="d-none d-xl-flex btn btn--primary btn--logout" href="https://portal.atozinterpreting.com/logout"
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+                        <form method="POST" action="https://portal.atozinterpreting.com/logout" accept-charset="UTF-8" class="d-none" id="logout-form"><input name="_token" type="hidden" value="ZY4N96UTD4q1QBMdtaAJMK27mNt1wbuuykofGgzg"></form>
+
+                    </div>
+                    <button class="header__hamburger hamburger hamburger--spin" type="button" id="hamburger">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="header__collapse" id="headerCollapse">
+                <ul class="list header__items">
+
+                                            <li
+                            class="header__item sidebar__item--active">
+                            <a href="https://portal.atozinterpreting.com/interpreter-jobs" class="header__link">
+                                <img src="/img/post-it.svg" alt="Job Board" class="img-fluid header__image">
+                                <div class="header__text">Job Board</div>
+                            </a>
+                        </li>
+                    
+                                            <li class="header__item sidebar__item--active">
+                            <a href=" https://portal.atozinterpreting.com/agent/profile/edit "
+                                class="header__link">
+                                <img src="/img/clients.svg" alt="My Account" class="img-fluid header__image">
+                                <div class="header__text">My Account</div>
+                            </a>
+                        </li>
+                        <li class="sidebar__item ">
+                            <a href="https://portal.atozinterpreting.com/timesheet" class="sidebar__link">
+                                <img src="/img/inbox.svg" alt="Timesheet" class="img-fluid sidebar__image">
+                                <div class="sidebar__text">Timesheet</div>
+                            </a>
+                        </li>
+                        <li class="sidebar__item ">
+                            <a href="https://portal.atozinterpreting.com/feedback" class="sidebar__link">
+                                <img src="/img/agents.svg" alt="feedback" class="img-fluid sidebar__image">
+                                <div class="sidebar__text">Feedback</div>
+                            </a>
+                        </li>
+                    
+                    
+
+
+                    
+                    <li class="header__item header__item--logout d-xl-none">
+                        <a class="btn btn--primary btn--logout" href="https://portal.atozinterpreting.com/logout"
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <ul class="list sidebar__items">
+
+                                    <li
+                        class="sidebar__item sidebar__item--active">
+                        <a href="https://portal.atozinterpreting.com/interpreter-jobs" class="sidebar__link">
+                            <img src="/img/post-it.svg" alt="Job Board" class="img-fluid sidebar__image">
+                            <div class="sidebar__text">Job Board</div>
+                        </a>
+                    </li>
+                
+                                    <li class="sidebar__item ">
+                        <a href="https://portal.atozinterpreting.com/agent/profile/edit"
+                            class="sidebar__link">
+                            <img src="/img/clients.svg" alt="My Account" class="img-fluid sidebar__image">
+                            <div class="sidebar__text">My Account</div>
+                        </a>
+                    </li>
+                    <li class="sidebar__item ">
+                        <a href="https://portal.atozinterpreting.com/timesheet" class="sidebar__link">
+                            <img src="/img/inbox.svg" alt="Timesheet" class="img-fluid sidebar__image">
+                            <div class="sidebar__text">Timesheet</div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar__item ">
+                        <a href="https://portal.atozinterpreting.com/feedback" class="sidebar__link">
+                            <img src="/img/agents.svg" alt="feedback" class="img-fluid sidebar__image">
+                            <div class="sidebar__text">Feedback</div>
+                        </a>
+                    </li>
+                
+                                                
+            </ul>
+        </aside>
+
+        
+        <div class="container content">
+            
+    <nav class="nav">
+        <h1 class="nav__heading">Job Board</h1>
+        <button type="button" class="btn btn-secondary">Total Jobs: <span
+                class="badge bg-light text-dark text-bold">1</span></button>
+        <ul class="links">
+            <li class="links__item">
+                <div class="links__text">Interpreter Jobs</div>
+            </li>
+            <li class="links__item links__item--last">
+                <a href="https://portal.atozinterpreting.com/translator-jobs" class="links__text links__text--link">Translation Jobs</a>
+            </li>
+        </ul>
+        <section class="job__actions">
+                                </section>
+    </nav>
+
+    <form method="GET" action="https://portal.atozinterpreting.com" accept-charset="UTF-8" class="filter" id="filterForm">
+<div class="section__left" style="display: flex;
+    flex-wrap: wrap; 
+    gap: 5px;">
+
+    <select class="input input--select mb-3 mb-lg-0 section__input" name="language_id"><option selected="selected" value="">Filter by language...</option><option value="3">Adioukrou</option><option value="216">Afghan Dari</option><option value="220">Afghan Farsi</option><option value="164">afghan pashto</option><option value="224">Afghani</option><option value="1">Afrikaans</option><option value="5">Akan</option><option value="4">Albanian</option><option value="210">ALEUT</option><option value="154">Algerian</option><option value="6">Amazigh</option><option value="7">Amharic</option><option value="2">Arabic</option><option value="199">Arabic</option><option value="8">Armenian</option><option value="9">Ashanti</option><option value="10">Azari</option><option value="11">Azerbaijani</option><option value="12">Badini</option><option value="23">Bajuni</option><option value="24">Baluchi</option><option value="13">Belarussian</option><option value="14">Bengali</option><option value="232">Benglai Dhaka</option><option value="15">Berber</option><option value="202">Bilen</option><option value="16">Bosnian</option><option value="204">brazilian</option><option value="218">BRAZILIAN PORTUGUESE</option><option value="18">BSL</option><option value="19">Bulgarian</option><option value="21">Burgundian</option><option value="20">Burmese</option><option value="22">Burundi</option><option value="17">Burushaski</option><option value="25">Cantonese</option><option value="30">Capeverdean Kriol</option><option value="221">catalan</option><option value="26">Catlan</option><option value="157">chachi-mirpuri</option><option value="27">Chinese</option><option value="28">Croatian</option><option value="29">Czech</option><option value="31">Danish</option><option value="32">Dari</option><option value="180">Dinka</option><option value="34">Dioala</option><option value="33">Diola</option><option value="169">Djoula</option><option value="35">Dutch</option><option value="223">Egyptian Arabic</option><option value="37">English</option><option value="36">Estonian</option><option value="156">EVE</option><option value="228">Ewe</option><option value="145">Fally</option><option value="197">Fanty</option><option value="38">Farsi</option><option value="144">Farsi(Dari)</option><option value="143">Farsi(iranian)</option><option value="39">Finnish</option><option value="40">Flemish</option><option value="41">French</option><option value="42">Fula</option><option value="165">Fur</option><option value="192">Ga</option><option value="45">Gaelic(Scottish)</option><option value="44">Gaelic(Welsh)</option><option value="43">Gag</option><option value="46">Georgian</option><option value="47">German</option><option value="196">Ghana</option><option value="48">Gorani</option><option value="49">Greek</option><option value="50">Gujarati</option><option value="194">Gurmukhi</option><option value="233">Gypsy Roma</option><option value="162">gypsy romanian</option><option value="229">Gypsy Slovakian</option><option value="142">Haddiya</option><option value="230">Hadini</option><option value="51">Hakka</option><option value="56">Hausa</option><option value="52">Hebrew</option><option value="53">Hindi</option><option value="54">Hindko</option><option value="181">Hinko</option><option value="55">Hungarian</option><option value="57">Icelandic</option><option value="58">Igbo</option><option value="61">Illongo</option><option value="189">Indian</option><option value="190">Indian punjabi</option><option value="59">Indonesian</option><option value="219">Iranian</option><option value="62">Ishan</option><option value="60">Italian</option><option value="203">Jamaican Patois</option><option value="63">Japanese</option><option value="198">Kangri</option><option value="71">Kannada</option><option value="68">Karatianian</option><option value="184">kashmiri</option><option value="150">Katchi</option><option value="64">Kathiawadi</option><option value="65">Kazakh</option><option value="79">Khuwar</option><option value="177">kikongo</option><option value="77">Kikuyu</option><option value="76">Kimyarwandi</option><option value="74">Kirundi</option><option value="78">Kiswahali</option><option value="73">Kitubu</option><option value="67">Korean</option><option value="66">Kosovan</option><option value="174">Krio</option><option value="72">Kuchi</option><option value="69">Kurdish</option><option value="195">kurdish</option><option value="70">Kurmanji</option><option value="75">Kurmanji</option><option value="80">Latvian</option><option value="235">Libyan Arabic</option><option value="81">Lingala</option><option value="82">Lithuanian</option><option value="83">Macedonian</option><option value="90">Malay</option><option value="84">Malayalam</option><option value="85">Malinke</option><option value="86">Mandarin</option><option value="91">Mandinka</option><option value="170">Maninka</option><option value="87">Marathi</option><option value="225">Mauritian Creole</option><option value="88">Mirpuri</option><option value="89">Mongolian</option><option value="92">Montenergrin</option><option value="176">Moroccan Arabic</option><option value="95">Ndebele</option><option value="93">Nepali</option><option value="94">Norwegian</option><option value="214">Nubian</option><option value="179">Nuer</option><option value="141">Oromo</option><option value="182">pahari</option><option value="226">Palestinian Arabic</option><option value="96">Panjabi</option><option value="201">parahi</option><option value="97">Pashto</option><option value="209">patwari</option><option value="147">Persian</option><option value="212">Persian(Farsi)</option><option value="98">Pidgin English</option><option value="99">Polish</option><option value="100">Portuguese</option><option value="101">Potawari</option><option value="183">pothohari</option><option value="158">pothwari</option><option value="193">punjab</option><option value="149">Punjabi</option><option value="205">Roma</option><option value="207">Roma Bulgarian</option><option value="206">Roma Slovak</option><option value="102">Romanian</option><option value="188">Russia</option><option value="103">Russian</option><option value="191">Russian</option><option value="104">Rwanda</option><option value="105">Serbian</option><option value="117">Serbo-Croatian</option><option value="118">Shinia</option><option value="116">Shona</option><option value="171">shyleti</option><option value="208">Sindhi</option><option value="106">Sinhalese</option><option value="234">slovak</option><option value="107">Slovakian</option><option value="108">Slovenia</option><option value="109">Somali</option><option value="153">Soninike</option><option value="115">Sorani</option><option value="186">Sorni</option><option value="168">Sosso</option><option value="111">Spanish</option><option value="217">Sri Lankan Tamil</option><option value="172">sudanese</option><option value="167">Sudanese Arabic</option><option value="110">Susu</option><option value="112">Swahili</option><option value="113">Swedish</option><option value="160">sylheti</option><option value="114">Sylhetti</option><option value="213">Syrian</option><option value="175">Syrian Arabic</option><option value="215">Syrian Arabic</option><option value="119">Tagalog</option><option value="126">Taiwanese</option><option value="120">Tamil</option><option value="121">Telugu</option><option value="231">Telugu Indian</option><option value="211">Test language</option><option value="128">Thai</option><option value="178">Thoknath</option><option value="122">Tigranian</option><option value="127">Tigre</option><option value="151">Tigrigna</option><option value="200">TIGRINYA</option><option value="155">togo</option><option value="123">Tshiluba</option><option value="227">Tunisian Arabic</option><option value="124">Turkish</option><option value="125">Twi</option><option value="129">Ukrainian</option><option value="185">urd</option><option value="130">Urdu</option><option value="161">urdu</option><option value="173">Urdu</option><option value="222">uru</option><option value="131">Uzbek</option><option value="133">Venda</option><option value="132">Vietnamese</option><option value="135">Wakhi</option><option value="134">Welsh</option><option value="187">Wolof</option><option value="136">Woolof</option><option value="137">Xhosa</option><option value="138">Yemeni</option><option value="139">Yoruba</option><option value="146">Yula</option><option value="140">Zulu</option></select>
+
+    
+    
+    <select class="input input--select mb-3 mb-lg-0 section__input section__input--middle" name="status"><option selected="selected" value="">Filter by status...</option><option value="0">pending</option><option value="1">assigned</option><option value="2">cancelled</option><option value="3">rejected</option><option value="4">completed</option><option value="5">quoted</option></select>
+
+
+
+
+    </div>
+<input class="input input--date-filter" placeholder="Filter By Date..." id="dateFilter" name="date" type="text">
+
+
+</form>
+
+
+
+    <section class="content__table">
+        <table class="table">
+            <thead class="table__header">
+                <tr>
+                    <th class="table__heading">Ref</th>
+                    <th class="table__heading">Submitted</th>
+                    <th class="table__heading">Appt. Date</th>
+                    <th class="table__heading">Appt. Time</th>
+                    <th class="table__heading">Duration</th>
+                    <th class="table__heading">Language</th>
+                    
+
+                    
+                    
+                    <th class="table__heading">Status</th>
+                    <th class="table__heading">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                                    <tr class="table__row">
+                        <td class="table__data">16495/atoz1</td>
+                        <td class="table__data">23/09/2025</td>
+                        <td class="table__data">24/09/2025</td>
+                        <td class="table__data">13:00</td>
+                        <td class="table__data">1 hours 0 minutes</td>
+                        <td class="table__data">
+                            Somali
+                                                    </td>
+                        
+                        
+                        
+                        <td class="table__data status status--matched">
+
+                                                            matched
+                            
+                        </td>
+                        <td class="table__data table__data--actions">
+
+                                                        
+
+                                                        
+
+                                                        
+
+                                                                                        
+                            
+                                                                                                                                        <form method="POST" action="https://portal.atozinterpreting.com/interpreter-jobs/16495/matched" accept-charset="UTF-8" class="d-inline-block"><input name="_method" type="hidden" value="PUT"><input name="_token" type="hidden" value="ZY4N96UTD4q1QBMdtaAJMK27mNt1wbuuykofGgzg">
+                                        <button type="submit" class="btn btn--primary table__btn">Accept</button>
+                                        </form>
+                                    
+                                    <form method="POST" action="https://portal.atozinterpreting.com/interpreter-jobs/16495/matched/reject" accept-charset="UTF-8" class="d-inline-block"><input name="_token" type="hidden" value="ZY4N96UTD4q1QBMdtaAJMK27mNt1wbuuykofGgzg">
+                                    <button type="submit" class="btn btn--reject table__btn">Reject</button>
+                                    </form>
+                                                            
+                            
+                                                            <a class="btn btn--secondary table__btn ml-1"
+                                    href="https://portal.atozinterpreting.com/interpreter-jobs/16495">View</a>
+                                                            
+                        </td>
+                    </tr>
+                
+            </tbody>
+        </table>
+    </section>
+
+    
+
+    <div class="modal fade" id="cancelModal" tabindex="-1">
+    <div class="modal-dialog">
+        <form method="POST" action="https://portal.atozinterpreting.com" accept-charset="UTF-8"><input name="_token" type="hidden" value="ZY4N96UTD4q1QBMdtaAJMK27mNt1wbuuykofGgzg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cancelModalLabel">Please provide a reason for your cancellation</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" required="required" name="message" cols="50" rows="10" id="message"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn--cancel section__btn" data-dismiss="modal">Close</button>
+                    <input class="btn btn--primary section__btn" type="submit" value="Send message">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal fade" id="24HourModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">24 hour alert</h5>
+            <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            The start time of this job is less than 24 hours away. If you choose to continue with the cancellation charges may apply if an interpreter is booked as per your terms and conditions.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn--cancel section__btn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn--secondary section__btn" data-dismiss="modal" id="continueButton">Continue</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+    
+        </div>
+    </div>
+
+    <script src="https://portal.atozinterpreting.com/js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    <script>
+        var canvas = document.getElementById('signature-pad');
+        if(canvas) {
+            var signaturePad = new SignaturePad(canvas);
+
+            var clearButton = document.getElementById('clear');
+            if(clearButton) {
+                clearButton.addEventListener('click', function() {
+                    signaturePad.clear();
+                });
+            }
+
+            var saveButton = document.getElementById('save');
+            if(saveButton) {
+                saveButton.addEventListener('click', function() {
+                    if (signaturePad.isEmpty()) {
+                        alert("Please provide a signature first.");
+                    } else {
+                        // Do something with the signature image data
+                        // For example: document.getElementById('signature-input').value = signaturePad.toDataURL();
+                    }
+                });
+            }
+        }
+    </script>
+        <script>
+        // Additional signature pad functionality for local environment
+        var canvas = document.getElementById('signature-pad');
+        if(canvas) {
+            var signaturePad = new SignaturePad(canvas);
+            var saveButton = document.getElementById('save');
+            if(saveButton) {
+                saveButton.addEventListener('click', function() {
+                    if (signaturePad.isEmpty()) {
+                        alert('Please provide a signature first.');
+                    } else {
+                        var dataURL = signaturePad.toDataURL('image/png');
+                        var signatureInput = document.getElementById('signature');
+                        var signatureForm = document.getElementById('signature-form');
+                        if(signatureInput) signatureInput.value = dataURL;
+                        if(signatureForm) signatureForm.submit();
+                    }
+                });
+            }
+        }
+    </script>
+    
+
+        <script>
+        window.addEventListener('load', function() {
+            $('#dateFilter').flatpickr({
+                allowInput: true,
+                mode: 'range',
+                dateFormat: 'Y-m-d',
+                altInput: true,
+                altFormat: 'd/m/Y',
+                onChange: function(selectedDates) {
+                    var _this = this,
+
+                        dateArr = selectedDates.map(function(date) {
+                            return _this.formatDate(date, 'd.m.Y')
+                        });
+
+                    /* only submit the form when the end date has been selected */
+                    // if (dateArr[1]) {
+                    $('#filterForm').submit()
+                    // }
+                }
+            })
+        })
+    </script>
+    <script>
+        window.addEventListener('load', function() {
+            $('#cancelModal').on('show.bs.modal', function (event) {
+                $(this)
+                    .find('form')
+                    .attr('action', event.relatedTarget.route)
+            })
+        })
+    </script>
+  <script>
+    window.addEventListener('load', function() {
+      $('#24HourModal').on('show.bs.modal', function (event) {
+        $('#continueButton').click(function() {
+          $('#cancelModal').modal('show', {
+            route: event.relatedTarget.route
+          })
+        })
+      })
+    })
+  </script>
+</body>
+
+</html>
+
+
+
+The above code was extracted from a live scenario where the a job was posted to the platform. Picing on the key css keys.. you can see a button that hifghlights accept, reject, view. The bot should primarily automatically accept the job with the following set preconditions. 
+
+1. If the job is remote and not Face to Face. 
+2. If the job is set with all othe parameters (16495/atoz1	23/09/2025	24/09/2025	13:00	1 hours 0 minutes	Somali	matched). 
+
+Check the code snipets for the AtoZ and update on the above requirements 

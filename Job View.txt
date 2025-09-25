@@ -1,0 +1,566 @@
+
+<!DOCTYPE html>
+<html class="html" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="ZY4N96UTD4q1QBMdtaAJMK27mNt1wbuuykofGgzg">
+    <title>A to Z</title>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+
+    <link href="https://portal.atozinterpreting.com/css/app.css" rel="stylesheet">
+	<link href="/favicon.ico" rel="shortcut icon" />
+    <style>
+        .sidebar {
+            /* width: 11%; Full viewport width */
+            overflow-x: auto;
+            /* Enable horizontal scrolling */
+            white-space: nowrap;
+            /* Prevent items from wrapping to the next line */
+        }
+
+        .sidebar__items {
+            /* display: flex; Use flexbox for horizontal layout */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar__item {
+            margin-right: 1rem;
+            flex-shrink: 0;
+            /* Prevent items from shrinking */
+        }
+
+        .sidebar__link {
+            /* display: flex; */
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            padding: 0.5rem;
+        }
+
+        .sidebar__image {
+            margin-right: 0.5rem;
+        }
+
+        .sidebar__item--active .sidebar__link {
+            background-color: #f0f0f0;
+            border-radius: 4px;
+        }
+    </style>
+    <style>
+        #signature-pad {
+            border: 1px solid #000;
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body class="body">
+
+    <aside class="messages">
+
+    
+    
+
+    
+    
+</aside>
+
+    <div id="app">
+        <header class="header">
+            <div class="header__logo">
+                <a href="/">
+                    <img class="img-fluid header__image" alt="A to Z" src="/img/logo.svg">
+                </a>
+            </div>
+            <div class="header__inner">
+
+                <form method="GET" action="https://portal.atozinterpreting.com/interpreter-jobs/16495" accept-charset="UTF-8" class="header__search">
+
+                <input placeholder="Search by ref" class="input header__input" name="search" type="text">
+
+                <button type="submit" class="btn btn--secondary header__btn">Submit</button>
+
+                </form>
+
+                <div class="header__right">
+                    <div class="header__logout" id="headerLogout">
+                        <h2 class="header__name">Mohammed Ahmed Abdihafit</h2>
+
+                        
+                        <a class="d-none d-xl-flex btn btn--primary btn--logout" href="https://portal.atozinterpreting.com/logout"
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+                        <form method="POST" action="https://portal.atozinterpreting.com/logout" accept-charset="UTF-8" class="d-none" id="logout-form"><input name="_token" type="hidden" value="ZY4N96UTD4q1QBMdtaAJMK27mNt1wbuuykofGgzg"></form>
+
+                    </div>
+                    <button class="header__hamburger hamburger hamburger--spin" type="button" id="hamburger">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="header__collapse" id="headerCollapse">
+                <ul class="list header__items">
+
+                                            <li
+                            class="header__item sidebar__item--active">
+                            <a href="https://portal.atozinterpreting.com/interpreter-jobs" class="header__link">
+                                <img src="/img/post-it.svg" alt="Job Board" class="img-fluid header__image">
+                                <div class="header__text">Job Board</div>
+                            </a>
+                        </li>
+                    
+                                            <li class="header__item sidebar__item--active">
+                            <a href=" https://portal.atozinterpreting.com/agent/profile/edit "
+                                class="header__link">
+                                <img src="/img/clients.svg" alt="My Account" class="img-fluid header__image">
+                                <div class="header__text">My Account</div>
+                            </a>
+                        </li>
+                        <li class="sidebar__item ">
+                            <a href="https://portal.atozinterpreting.com/timesheet" class="sidebar__link">
+                                <img src="/img/inbox.svg" alt="Timesheet" class="img-fluid sidebar__image">
+                                <div class="sidebar__text">Timesheet</div>
+                            </a>
+                        </li>
+                        <li class="sidebar__item ">
+                            <a href="https://portal.atozinterpreting.com/feedback" class="sidebar__link">
+                                <img src="/img/agents.svg" alt="feedback" class="img-fluid sidebar__image">
+                                <div class="sidebar__text">Feedback</div>
+                            </a>
+                        </li>
+                    
+                    
+
+
+                    
+                    <li class="header__item header__item--logout d-xl-none">
+                        <a class="btn btn--primary btn--logout" href="https://portal.atozinterpreting.com/logout"
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <ul class="list sidebar__items">
+
+                                    <li
+                        class="sidebar__item sidebar__item--active">
+                        <a href="https://portal.atozinterpreting.com/interpreter-jobs" class="sidebar__link">
+                            <img src="/img/post-it.svg" alt="Job Board" class="img-fluid sidebar__image">
+                            <div class="sidebar__text">Job Board</div>
+                        </a>
+                    </li>
+                
+                                    <li class="sidebar__item ">
+                        <a href="https://portal.atozinterpreting.com/agent/profile/edit"
+                            class="sidebar__link">
+                            <img src="/img/clients.svg" alt="My Account" class="img-fluid sidebar__image">
+                            <div class="sidebar__text">My Account</div>
+                        </a>
+                    </li>
+                    <li class="sidebar__item ">
+                        <a href="https://portal.atozinterpreting.com/timesheet" class="sidebar__link">
+                            <img src="/img/inbox.svg" alt="Timesheet" class="img-fluid sidebar__image">
+                            <div class="sidebar__text">Timesheet</div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar__item ">
+                        <a href="https://portal.atozinterpreting.com/feedback" class="sidebar__link">
+                            <img src="/img/agents.svg" alt="feedback" class="img-fluid sidebar__image">
+                            <div class="sidebar__text">Feedback</div>
+                        </a>
+                    </li>
+                
+                                                
+            </ul>
+        </aside>
+
+        
+        <div class="container content">
+            
+<main class="job">
+
+    <header class="job__header">
+    <h1 class="job__heading">
+
+                    Interpreter job: Somali
+        
+        <div class="job__reference">16495/atoz</div>
+    </h1>
+
+            <section class="job__actions ">
+            <div class="job__wrapper">
+                <label class="job__label job__label--big">Status:</label>
+                <span class="job__status status status--matched">
+                    matched
+
+                    
+                </span>
+            </div>
+
+                                                <form method="POST" action="https://portal.atozinterpreting.com/interpreter-jobs/16495/matched" accept-charset="UTF-8" class="d-inline-block w-50"><input name="_method" type="hidden" value="PUT"><input name="_token" type="hidden" value="ZY4N96UTD4q1QBMdtaAJMK27mNt1wbuuykofGgzg">
+                    <button type="submit" class="btn btn--primary">Accept</button>
+                    </form>
+                            
+        </section>
+    
+</header>
+
+<ul class="tabs">
+    <li class="tabs__tab">
+
+                    <div class="tabs__text">Job details</div>
+        
+    </li>
+
+    
+                    <li class="tabs__tab">
+                            <a href="https://portal.atozinterpreting.com/interpreter-jobs/16495/documents" class="tabs__text tabs__text--link">Travel
+                    Expences Reciept</a>
+                    </li>
+        
+    
+</ul>
+
+<div class="modal fade" id="cancelModal" tabindex="-1">
+    <div class="modal-dialog">
+        <form method="POST" action="https://portal.atozinterpreting.com/interpreter-jobs/16495" accept-charset="UTF-8"><input name="_token" type="hidden" value="ZY4N96UTD4q1QBMdtaAJMK27mNt1wbuuykofGgzg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cancelModalLabel">Please provide a reason for your cancellation</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" required="required" name="message" cols="50" rows="10" id="message"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn--cancel section__btn" data-dismiss="modal">Close</button>
+                    <input class="btn btn--primary section__btn" type="submit" value="Send message">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<div class="modal fade" id="24HourModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">24 hour alert</h5>
+            <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            The start time of this job is less than 24 hours away. If you choose to continue with the cancellation charges may apply if an interpreter is booked as per your terms and conditions.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn--cancel section__btn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn--secondary section__btn" data-dismiss="modal" id="continueButton">Continue</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="messageModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body py-4">
+        <h2 class="modal-name d-none" id="cancellationMessage"></h2>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn--cancel section__btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="row">
+        <div class="col-xl-6 overflow-auto">
+            <table class="table table--detail shadow-none w-100 mb-5 mb-xl-0">
+                <tr class="table__row table__row--short">
+                    <td class="p-0 h-100">
+                        <div class="job__detail pl-4 d-flex align-items-center h-100">
+                            Company name:
+                        </div>
+                    </td>
+                    <td class="p-0 h-100">
+                        <div class="text-black pl-4 d-flex align-items-center h-100">
+                            J M Wilson Solicitors
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table__row table__row--short">
+                    <td class="p-0 h-100">
+                        <div class="job__detail pl-4 d-flex align-items-center h-100">
+                            Client name:
+                        </div>
+                    </td>
+                    <td class="p-0 h-100">
+                        <div class="text-black pl-4 d-flex align-items-center h-100">
+                            Ms. Zahra Lakha
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table__row table__row--short">
+                    <td class="p-0 h-100">
+                        <div class="job__detail pl-4 d-flex align-items-center h-100">
+                            Language:
+                        </div>
+                    </td>
+                    <td class="p-0 h-100">
+                        <div class="text-black pl-4 d-flex align-items-center h-100">
+                            Somali
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table__row table__row--short">
+                    <td class="p-0 h-100">
+                        <div class="job__detail pl-4 pt-3 d-flex align-items-start h-100">
+                            Interpreter details:
+                        </div>
+                    </td>
+                    <td class="text-black pl-4">
+                        <div>Face to Face</div>
+                        <div>     </div>
+        
+        <div></div>
+                        <div>Either</div>
+                    </td>
+                </tr>
+                <tr class="table__row table__row--short">
+                    <td class="p-0 h-100">
+                        <div class="job__detail pl-4 d-flex align-items-center h-100">
+                            Appointment date and time:
+                        </div>
+                    </td>
+                    <td class="p-0 h-100">
+                        <div class="text-black pl-4 d-flex align-items-center h-100">
+                            <span class="mr-4">24/09/2025</span>
+                            13:00
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table__row table__row--short">
+                    <td class="p-0 h-100">
+                        <div class="job__detail pl-4 d-flex align-items-center h-100">
+                            Appointment duration:
+                        </div>
+                    </td>
+                    <td class="p-0 h-100">
+                        <div class="text-black pl-4 d-flex align-items-center h-100">
+                            1 hours 0 minutes
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table__row table__row--short">
+                    <td class="p-0 h-100">
+                        <div class="job__detail pl-4 d-flex align-items-center h-100">
+                            Service user details:
+                        </div>
+                    </td>
+                    <td class="p-0 h-100">
+                        <div class="text-black pl-4 d-flex align-items-center h-100">
+                            Not required
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table__row table__row--short">
+                    <td class="p-0 h-100">
+                        <div class="job__detail pl-4 d-flex align-items-center h-100">
+                            Special instructions:
+                        </div>
+                    </td>
+                    <td class="p-0 h-100">
+                        <div class="text-black pl-4 d-flex align-items-center h-100">
+                            None
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table__row table__row--short">
+                    <td class="p-0 h-100">
+                        <div class="job__detail pl-4 d-flex align-items-center h-100">
+                            Client reference:
+                        </div>
+                    </td>
+                    <td class="p-0 h-100">
+                        <div class="text-black pl-4 d-flex align-items-center h-100">
+                            n/a
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+                    <div class="col-xl-6 d-lg-flex flex-lg-column">
+                <div class="position-relative">
+                    <div id="map" class="map position-relative"></div>
+                    <a class="btn btn--secondary btn--get-directions"
+                        href="http://maps.google.com/maps?saddr=51.5404660,-0.2903490&daddr=52.4820350,-1.8957590"
+                        target="_blank" rel="noopener noreferrer">Get directions</a>
+                </div>
+                <div class="bg-white p-4 pb-md-5 flex-lg-fill">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="job__detail mb-2">Appointment address</div>
+                            <address class="text-black">
+                                <div class="job__address mb-1">The Lewis Building, 35 Bull Street,</div>
+                                <div class="job__address mb-1">Birmingham</div>
+                                <div class="job__address mb-1">WestMidlands</div>
+                                <div class="job__address mb-1">B4 6AF</div>
+                            </address>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="job__detail mb-2">Contact information of person on arrival</div>
+                            <div class="job__address text-black">
+                                Same as client account
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="col-12">
+
+                            <form method="POST" action="https://portal.atozinterpreting.com/interpreter-jobs/16495/matched/reject" accept-charset="UTF-8"><input name="_token" type="hidden" value="ZY4N96UTD4q1QBMdtaAJMK27mNt1wbuuykofGgzg">
+                    <input class="btn btn--reject btn--long mt-4" type="submit" value="Reject Job">
+                </form>
+            
+            <hr class="mt-4">
+            <footer class="d-flex justify-content-between">
+                <span>Submitted: 23/09/2025</span>
+                <span>Last updated: 23/09/2025</span>
+            </footer>
+        </div>
+    </div>
+</main>
+
+        </div>
+    </div>
+
+    <script src="https://portal.atozinterpreting.com/js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    <script>
+        var canvas = document.getElementById('signature-pad');
+        if(canvas) {
+            var signaturePad = new SignaturePad(canvas);
+
+            var clearButton = document.getElementById('clear');
+            if(clearButton) {
+                clearButton.addEventListener('click', function() {
+                    signaturePad.clear();
+                });
+            }
+
+            var saveButton = document.getElementById('save');
+            if(saveButton) {
+                saveButton.addEventListener('click', function() {
+                    if (signaturePad.isEmpty()) {
+                        alert("Please provide a signature first.");
+                    } else {
+                        // Do something with the signature image data
+                        // For example: document.getElementById('signature-input').value = signaturePad.toDataURL();
+                    }
+                });
+            }
+        }
+    </script>
+        <script>
+        // Additional signature pad functionality for local environment
+        var canvas = document.getElementById('signature-pad');
+        if(canvas) {
+            var signaturePad = new SignaturePad(canvas);
+            var saveButton = document.getElementById('save');
+            if(saveButton) {
+                saveButton.addEventListener('click', function() {
+                    if (signaturePad.isEmpty()) {
+                        alert('Please provide a signature first.');
+                    } else {
+                        var dataURL = signaturePad.toDataURL('image/png');
+                        var signatureInput = document.getElementById('signature');
+                        var signatureForm = document.getElementById('signature-form');
+                        if(signatureInput) signatureInput.value = dataURL;
+                        if(signatureForm) signatureForm.submit();
+                    }
+                });
+            }
+        }
+    </script>
+    
+
+        <script>
+        window.addEventListener('load', function() {
+            $('#cancelModal').on('show.bs.modal', function (event) {
+                $(this)
+                    .find('form')
+                    .attr('action', event.relatedTarget.route)
+            })
+        })
+    </script>
+  <script>
+    window.addEventListener('load', function() {
+      $('#messageModal').on('show.bs.modal', function (event) {
+        $(this).find('#cancellationMessage')
+          .removeClass('d-none')
+          .text(
+            $(event.relatedTarget).data('msg')
+          )
+      })
+    })
+  </script>
+  <script>
+    window.addEventListener('load', function() {
+      $('#24HourModal').on('show.bs.modal', function (event) {
+        $('#continueButton').click(function() {
+          $('#cancelModal').modal('show', {
+            route: event.relatedTarget.route
+          })
+        })
+      })
+    })
+  </script>
+    <script>
+        function initMap() {
+            var jobLocation = { lat: 52.4820350, lng: -1.8957590 },
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: jobLocation,
+                zoom: 8
+            })
+
+            new google.maps.Marker({
+                position: jobLocation,
+                map: map,
+            })
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKypyV_to1UeVcCmygrW9UIa_VVHGHFXU&callback=initMap" async
+        defer></script>
+</body>
+
+</html>
+
+The bot should first click on view after checking the table. On view tab it should check  under Interpreter details: on the table to see if the order is face to face or telephone interpreting. If it is telephone interpreting, it should proceed and accept the order. 
